@@ -17,7 +17,7 @@ class gpsDelegate: NSObject ,NSURLConnectionDelegate {
     func gpsLocation() {
         print("GPSLOCATION gpsDelegate.swift")
         
-        let urlString = NSString(string: "http://shuttle.cs.wfu.edu/gps/gpsInfo.php")
+        let urlString = NSString(string: "URL TO SUBMITE GPS INFO")
 
         
         let date:NSDate = NSDate()

@@ -193,7 +193,7 @@ class CounterViewController: UIViewController, CLLocationManagerDelegate, UIPick
             
             let xml = NSString(format: "<?xml version=\"1.0\"?><stop><time>%@</time><bus>%@</bus><busStop>%@</busStop><location><lat>%@</lat><lon>%@</lon></location><count><on>%d</on><off>%d</off></count></stop>", currentDate, currentRoute, selectedStop!, latitude, longitude, on!, off!)
 
-            let path = NSString(string: "http://shuttle.cs.wfu.edu/count/addCount.php")
+            let path = NSString(string: "URL TO ADD DATA")
             let postData = self.generateDataFromText(xml, fieldName: "xml")
 
             let uploadRequest = NSMutableURLRequest(URL: NSURL(string: path as String)!)
@@ -325,7 +325,7 @@ class CounterViewController: UIViewController, CLLocationManagerDelegate, UIPick
     }
     
     func setPickerWheel() {
-        var routeURL = "http://shuttle.cs.wfu.edu/iphoneRoutes/"
+        var routeURL = "URL TO GET ROUTES"
         routeURL += pickerWheelRoute
         
         let routeRequest:NSURL = NSURL(string: routeURL)!
